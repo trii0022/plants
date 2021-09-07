@@ -56,11 +56,20 @@ main {
   margin-top: 5vw;
 }
 
-section {
+.mainpage {
   grid-column: 2;
   margin-top: 4vw;
   margin-left: -5vw;
   margin-right: 15vw;
+}
+
+.product {
+  grid-column: 1;
+  margin-left: 5vw;
+}
+
+.productimg {
+  grid-column: 2;
 }
 
 h1 {
