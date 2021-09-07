@@ -70,6 +70,7 @@ main {
 
 .productimg {
   grid-column: 2;
+  margin-top: 5rem;
 }
 
 h1 {
@@ -79,6 +80,7 @@ h1 {
 
 p {
   color: var(--main-text-color);
+  letter-spacing: 0.05rem;
 }
 
 /* Media queries - need to EDIT */
