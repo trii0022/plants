@@ -81,6 +81,12 @@ p {
   color: var(--main-text-color);
 }
 
+.listimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Media queries - need to EDIT */
 
 @media (min-width: 800px) {
