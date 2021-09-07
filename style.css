@@ -17,6 +17,11 @@ html {
   font-family: var(--primary-font);
 }
 
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 nav {
   display: flex;
 
@@ -42,6 +47,7 @@ nav a:first-child {
   font-weight: 700;
   /*  margin-top: -0.5rem; */
   font-family: var(--primary-font);
+  margin-left: 5rem;
 }
 
 main {
@@ -54,13 +60,23 @@ main {
   grid-column: 1;
   margin-left: 10vw;
   margin-top: 5vw;
+  width: 30vw;
 }
 
-.mainpage {
+/*.mainpage {
   grid-column: 2;
   margin-top: 4vw;
   margin-left: -5vw;
   margin-right: 15vw;
+}*/
+
+/*.mainpage {*/
+.frontpage_section {
+  grid-column: 2;
+  margin-top: 4vw;
+  margin-left: 5vw;
+  margin-right: 15vw;
+  width: 25vw;
 }
 
 .product {
@@ -70,6 +86,7 @@ main {
 
 .productimg {
   grid-column: 2;
+  margin-top: 5rem;
 }
 
 h1 {
@@ -79,6 +96,59 @@ h1 {
 
 p {
   color: var(--main-text-color);
+  letter-spacing: 0.05rem;
+}
+
+/*Footer*/
+
+.footer_container {
+  margin-top: 20vh;
+  background-color: #01401c;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  height: 20vh;
+  padding: 3vw;
+  padding-left: 10vw;
+}
+
+h3 {
+  font-size: 1rem;
+  color: white;
+}
+
+.social {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  width: 40vw;
+}
+
+.ig img {
+  position: absolute;
+  background: no-repeat;
+  width: 3vw;
+  padding-top: 7vh;
+  margin-left: -5vw;
+  margin-right: 2rem;
+}
+
+.fb img {
+  position: absolute;
+  background-size: 100%;
+  width: 3vw;
+  padding-top: 7vh;
+  margin-left: -5vw;
+  margin-right: 2rem;
+}
+
+.snapchat img {
+  position: absolute;
+  background-size: 100%;
+  width: 3vw;
+  padding-top: 7vh;
+  margin-left: -6vw;
+  margin-right: 2rem;
 }
 
 /* Media queries - need to EDIT */
