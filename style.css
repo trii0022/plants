@@ -63,6 +63,14 @@ section {
   margin-right: 15vw;
 }
 
+.product {
+  grid-column: 1;
+}
+
+.productimg {
+  grid-column: 2;
+}
+
 h1 {
   font-size: 4rem;
   color: var(--main-text-color);
