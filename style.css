@@ -17,6 +17,11 @@ html {
   font-family: var(--primary-font);
 }
 
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 nav {
   display: flex;
 
@@ -73,6 +78,58 @@ h1 {
 
 p {
   color: var(--main-text-color);
+}
+
+/*Footer*/
+
+.footer_container {
+  margin-top: 20vh;
+  background-color: #01401c;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  height: 20vh;
+  padding: 3vw;
+  padding-left: 10vw;
+}
+
+h3 {
+  font-size: 1rem;
+  color: white;
+}
+
+.social {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  width: 40vw;
+}
+
+.ig img {
+  position: absolute;
+  background: no-repeat;
+  width: 3vw;
+  padding-top: 7vh;
+  margin-left: -5vw;
+  margin-right: 2rem;
+}
+
+.fb img {
+  position: absolute;
+  background-size: 100%;
+  width: 3vw;
+  padding-top: 7vh;
+  margin-left: -5vw;
+  margin-right: 2rem;
+}
+
+.snapchat img {
+  position: absolute;
+  background-size: 100%;
+  width: 3vw;
+  padding-top: 7vh;
+  margin-left: -6vw;
+  margin-right: 2rem;
 }
 
 /* Media queries - need to EDIT */
