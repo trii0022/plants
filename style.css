@@ -1,0 +1,99 @@
+:root {
+  /*   --bg-color: #6c7d6a;
+  --link-color: #185d0b;
+  --link-hover-color: #185d0b;
+  --color-4: #185d0b;
+  --color-5: #185d0b;
+ */
+  --primary-font: "Urbanist", sans-serif;
+  --secondary-font: "Montserrat", serif;
+  --main-text-color: #185d0b;
+
+  --white-space: 1rem;
+}
+
+html {
+  font-size: 100%;
+  font-family: var(--primary-font);
+}
+
+nav {
+  display: flex;
+
+  gap: 7rem;
+  justify-content: space-around;
+  align-items: baseline;
+
+  padding: 1rem;
+  margin-right: 15rem;
+  margin-left: 5rem;
+}
+
+a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+
+nav a:first-child {
+  margin-right: auto;
+  font-size: 3rem;
+  font-weight: 700;
+  /*  margin-top: -0.5rem; */
+  font-family: var(--primary-font);
+}
+
+main {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+}
+
+.mainimg {
+  grid-column: 1;
+  margin-left: 10vw;
+  margin-top: 5vw;
+}
+
+section {
+  grid-column: 2;
+  margin-top: 4vw;
+  margin-left: -5vw;
+  margin-right: 15vw;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--main-text-color);
+}
+
+p {
+  color: var(--main-text-color);
+}
+
+/* Media queries - need to EDIT */
+
+@media (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+
+  .swatches li {
+    margin-right: 3%;
+    height: 10vw;
+    width: 20%;
+  }
+
+  .textures li {
+    height: 15vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .adjectives ul {
+    flex-direction: row;
+  }
+}
