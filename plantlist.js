@@ -1,4 +1,7 @@
-const url = "https://keasem2-6806.restdb.io/rest/plant?max=4";
+const urlParams = new URLSearchParams(window.location.search);
+const species = urlParams.get("species");
+
+const url = "https://keasem2-6806.restdb.io/rest/plant?species="; +species
 
 const options = {
   headers: {
@@ -31,6 +34,7 @@ function handleData(plants) {
     const clone = template.cloneNode(true);
     //populate with data
     clone.querySelector("h1.listh1").textContent = plant.name;
+    clone.querySelector(".link").setAttribute("href", "plant.html?id=" + plant.id);
     clone.querySelector("img").src = plant.image;
     // clone.querySelector("h1.name-species").textContent = plant.species;
 

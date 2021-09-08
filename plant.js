@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
-// const subcat = urlParams.get("title");
-const url = "https://keasem2-6806.restdb.io/rest/plant?max=1";
+const id = urlParams.get("id");
+const url = "https://keasem2-6806.restdb.io/rest/plant/" +id;
 
 const key = {
     headers: {
@@ -8,45 +8,35 @@ const key = {
     },
 };
 
-
 console.log("hello?");
+
 fetch(url, key)
     .then(function (res) {
         return res.json();
     })
     .then(function (data) {
-        // console.log(data);
         showPlant(data);
+        console.log(data);
     })
 
-function showPlant(data) {
-    console.log(data);
-    data.forEach(showInfo);
-}
-
-function showInfo(obj) {
+function showPlant(obj) {
     console.log(obj);
-    const template = document.querySelector(".plantcard").content;
-    const clone = template.cloneNode(true);
-    clone.querySelector("h1").textContent = obj.name;
-    clone.querySelector(".latinname").textContent = obj.latinname;
-    clone.querySelector(".species").textContent = obj.species;
-    clone.querySelector(".description").textContent = obj.description;
-    clone.querySelector(".watering span").textContent = obj.watering;
-    clone.querySelector(".productimg").src = obj.watering;
-    clone.querySelector("img").src = obj.image;
-    clone.querySelector("img").alt = obj.name;
+    document.querySelector("h1").textContent = obj.name;
+    document.querySelector(".latinname span").textContent = obj.latinname;
+    document.querySelector(".species span").textContent = obj.species;
+    document.querySelector(".description span").textContent = obj.description;
+    document.querySelector(".watering span").textContent = obj.watering;
+    document.querySelector(".productimg").src = obj.watering;
+    document.querySelector("img").src = obj.image;
+    document.querySelector("img").alt = obj.name;
 
     if (obj.flowers) {
-        clone.querySelector(".flowers span").textContent = "Yes";
+        document.querySelector(".flowers span").textContent = "Yes";
     }
-    else {        clone.querySelector(".flowers span").textContent = "No";
+    else {        document.querySelector(".flowers span").textContent = "No";
 }
 if (obj.directsunlight) {
-        clone.querySelector(".directsunlight span").textContent = "Yes";
+        document.querySelector(".directsunlight span").textContent = "Yes";
     }
-    else {        clone.querySelector(".directsunlight span").textContent = "No";
-}
-    const parent = document.querySelector("main");
-    parent.appendChild(clone);
-}
+    else {        document.querySelector(".directsunlight span").textContent = "No";
+}}
