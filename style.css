@@ -60,7 +60,7 @@ main {
   display: grid;
   grid-gap: 3vw;
   grid-template-columns: 1.5fr 2fr;
-  grid-template-rows: 1;
+  grid-template-rows: 1fr;
   margin-left: 4.5vw;
 }
 .listmain {
@@ -107,14 +107,9 @@ main {
 .directsunlight {
   grid-column: 1;
 }
-.productimg {
-  grid-column: 2;
-  margin-top: 5rem;
-}
 
 .productimg {
-  grid-column: 2;
-  max-width: fit-content;
+  grid-column-start: 2;
 }
 
 h1 {
