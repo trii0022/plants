@@ -55,6 +55,13 @@ main {
   display: grid;
   grid-template-columns: 40% 40% 20%;
 }
+.plantmain {
+  display: grid;
+  grid-gap: 3vw;
+  grid-template-columns: 1.5fr 2fr;
+  grid-template-rows: 1;
+  margin-left: 4.5vw;
+}
 .listmain {
   margin-left: 20vw;
   margin-right: 20vw;
@@ -82,24 +89,31 @@ main {
   margin-right: 15vw;
   width: 25vw;
 }
-
+/* PRODUCT PAGE */
 .product {
-  grid-column: 1;
+  display: block;
+  /* grid-gap: 3vw;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1; */
   margin-left: 4.5vw;
 }
-
+.name,
+.latinname,
+.species,
+.description,
+.flowers,
+.watering,
+.directsunlight {
+  grid-column: 1;
+}
 .productimg {
   grid-column: 2;
   margin-top: 5rem;
 }
 
-.product {
-  grid-column: 1;
-  margin-left: 4.5vw;
-}
-
 .productimg {
   grid-column: 2;
+  max-width: fit-content;
 }
 
 h1 {
