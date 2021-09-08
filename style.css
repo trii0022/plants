@@ -55,7 +55,10 @@ main {
   display: grid;
   grid-template-columns: 40% 40% 20%;
 }
-
+.listmain {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
 .mainimg {
   grid-column: 1;
   margin-left: 10vw;
@@ -165,6 +168,15 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid black;
+}
+.listh1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+.name-species {
+  text-align: center;
 }
 
 /* Media queries - need to EDIT */
