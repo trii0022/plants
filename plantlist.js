@@ -22,14 +22,13 @@ function handleData(data) {
 }
 
 
-function showData(plant) {
-
-    console.log(plant);
+function showData(obj) {
+    // console.log(obj);
     const template = document.querySelector("template").content;
     const clone = template.cloneNode(true);
-    clone.querySelector("h1.listh1").textContent = plant.name;
-    clone.querySelector(".link").setAttribute("href", "plant.html?id=" + plant.id);
-    clone.querySelector("img").src = plant.image;
+    clone.querySelector("h1.listh1").textContent = obj.name;
+    clone.querySelector(".link").setAttribute("href", "plant.html?id=" + obj._id);
+    clone.querySelector("img").src = obj.image;
     const mainEl = document.querySelector("main");
     // const mainEl = document.querySelector("body");
     mainEl.appendChild(clone);

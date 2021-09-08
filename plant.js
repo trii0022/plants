@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 const url = "https://keasem2-6806.restdb.io/rest/plant/" +id;
-
+console.log(url);
 const key = {
     headers: {
         "x-apikey": "61361b1443cedb6d1f97ed4f",
