@@ -42,6 +42,7 @@ function handleData(plants) {
     // clone.querySelector("h3.wf").textContent = plant.wateringfrequency;
     //append it to DOM
     const mainEl = document.querySelector("main");
+    // const mainEl = document.querySelector("body");
     mainEl.appendChild(clone);
   });
 }
