@@ -32,6 +32,7 @@ function handleData(plants) {
     //populate with data
     clone.querySelector("h1.listh1").textContent = plant.name;
     clone.querySelector("img").src = plant.image;
+    // clone.querySelector("h1.name-species").textContent = plant.species;
 
     // clone.querySelector("h3.cname").textContent = plant.commonname;
     // clone.querySelector("h3.ds").textContent = plant.directsunlight;
