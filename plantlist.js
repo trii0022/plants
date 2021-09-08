@@ -31,10 +31,8 @@ function handleData(plants) {
     const clone = template.cloneNode(true);
     //populate with data
     clone.querySelector("h1.listh1").textContent = plant.name;
-    // clone.querySelector("img").src = plant.name;
-    // copy.querySelector(
-    //     "img"
-    //   ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+    clone.querySelector("img").src = plant.image;
+
     // clone.querySelector("h3.cname").textContent = plant.commonname;
     // clone.querySelector("h3.ds").textContent = plant.directsunlight;
     // clone.querySelector("h3.flowers").textContent = plant.flowers;
