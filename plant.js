@@ -1,7 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 // const subcat = urlParams.get("title");
 const url = "https://keasem2-6806.restdb.io/rest/plant?max=1";
-// var flowers = obj.flowers (true);
 
 const key = {
     headers: {
@@ -38,12 +37,16 @@ function showInfo(obj) {
     clone.querySelector("img").src = obj.image;
     clone.querySelector("img").alt = obj.name;
 
-//     if (flowers) {
-//         clone.querySelector("flowers span").textContent = "Yes";
-//     }
-//     else {        clone.querySelector("flowers span").textContent = "No";
-// }
-
+    if (obj.flowers) {
+        clone.querySelector(".flowers span").textContent = "Yes";
+    }
+    else {        clone.querySelector(".flowers span").textContent = "No";
+}
+if (obj.directsunlight) {
+        clone.querySelector(".directsunlight span").textContent = "Yes";
+    }
+    else {        clone.querySelector(".directsunlight span").textContent = "No";
+}
     const parent = document.querySelector("main");
     parent.appendChild(clone);
 }
