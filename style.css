@@ -30,6 +30,7 @@ nav {
   padding: 1rem;
   margin-right: 15rem;
   margin-left: 5rem;
+  margin-top: 2rem;
 }
 
 a {
@@ -39,7 +40,12 @@ a {
   font-size: 1.3rem;
   cursor: pointer;
 }
-
+nav a:hover {
+  color: var(--green30);
+  text-decoration-line: underline;
+  transition: all 0.5s;
+  font-size: 1.4rem;
+}
 nav a:first-child {
   margin-right: auto;
   font-size: 3rem;
@@ -72,6 +78,14 @@ main {
   margin-top: 5vw;
   width: 30vw;
 }
+.logo {
+  color: var(--green30);
+  text-decoration-line: none;
+}
+.logo:hover {
+  text-decoration-line: none;
+  font-size: 3.2rem;
+}
 
 .mainpage {
   grid-column: 2;
@@ -90,9 +104,6 @@ main {
   margin-left: 5vw;
   margin-right: 15vw;
   width: 25vw;
-}
-.logo {
-  color: var(--green30);
 }
 
 .secondary-button {
