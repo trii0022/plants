@@ -138,6 +138,7 @@ button {
   cursor: pointer;
   margin: 0 1rem 1rem 0;
 }
+/* LIST PAGES */
 
 /* PRODUCT PAGE */
 .product {
@@ -247,6 +248,8 @@ li {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;
+  width: 30rem;
+  height: 30rem;
 }
 .listh1 {
   text-align: center;
