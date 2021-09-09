@@ -1,7 +1,18 @@
+// const urlParams = new URLSearchParams(window.location.search);
+// const species = urlParams.get("species");
+
+// const url = "https://keasem2-6806.restdb.io/rest/plant?species="; +species
+
+
 const urlParams = new URLSearchParams(window.location.search);
 const species = urlParams.get("species");
+// https://keasem2-6806.restdb.io/rest/plant?q={"species": "SUCCULENTS"}
+// const url = "https://keasem2-6806.restdb.io/rest/plant?species="; +species;
 
-const url = "https://keasem2-6806.restdb.io/rest/plant?species="; +species
+const url = `https://keasem2-6806.restdb.io/rest/plant?q={"species": "${species}"}`;
+
+
+console.log(url);
 
 const key = {
   headers: {

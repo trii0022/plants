@@ -1,13 +1,13 @@
 :root {
-  /*   --bg-color: #6c7d6a;
-  --link-color: #185d0b;
-  --link-hover-color: #185d0b;
-  --color-4: #185d0b;
-  --color-5: #185d0b;
- */
+  --bg-color: #e9eaec;
+  --link-color: green;
+  --color-5: rebeccapurple;
+  --green10: #038c4c;
+  --green20: #02733e;
+  --green30: #045e2b;
+  --main-text-color: #000;
   --primary-font: "Urbanist", sans-serif;
   --secondary-font: "Montserrat", serif;
-  --main-text-color: #185d0b;
 
   --white-space: 1rem;
 }
@@ -24,24 +24,28 @@ body {
 
 nav {
   display: flex;
-
   gap: 7rem;
   justify-content: space-around;
   align-items: baseline;
-
   padding: 1rem;
   margin-right: 15rem;
   margin-left: 5rem;
+  margin-top: 2rem;
 }
 
 a {
-  color: var(--main-text-color);
+  color: var(--green20);
   text-decoration: none;
   font-weight: 200;
   font-size: 1.3rem;
   cursor: pointer;
 }
-
+nav a:hover {
+  color: var(--green30);
+  text-decoration-line: underline;
+  transition: all 0.5s;
+  font-size: 1.4rem;
+}
 nav a:first-child {
   margin-right: auto;
   font-size: 3rem;
@@ -54,7 +58,8 @@ nav a:first-child {
 main {
   margin-top: 1em;
   display: grid;
-  grid-template-columns: 40% 40% 20%;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0;
 }
 .plantmain {
   display: grid;
@@ -73,6 +78,14 @@ main {
   margin-top: 5vw;
   width: 30vw;
 }
+.logo {
+  color: var(--green30);
+  text-decoration-line: none;
+}
+.logo:hover {
+  text-decoration-line: none;
+  font-size: 3.2rem;
+}
 
 .mainpage {
   grid-column: 2;
@@ -82,7 +95,9 @@ main {
 }
 */
 
-/*.mainpage {*/
+/* INDEX */
+
+
 .frontpage_section {
   grid-column: 2;
   margin-top: 4vw;
@@ -90,6 +105,41 @@ main {
   margin-right: 15vw;
   width: 25vw;
 }
+
+.secondary-button {
+  margin-top: 2vw;
+  background: var(--green30);
+  box-shadow: none;
+  color: var(--bg-color);
+  padding: 1.2vw;
+  border-radius: 20px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+
+.secondary-button:hover {
+  background: var(--bg-color);
+  color: var(--green30);
+  padding: 0.9vw;
+}
+button {
+  font-family: "urbanist", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  background: var(--bg-color);
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin: 0 1rem 1rem 0;
+}
+/* LIST PAGES */
+
 /* PRODUCT PAGE */
 .product {
   display: block;
@@ -107,14 +157,22 @@ main {
 .directsunlight {
   grid-column: 1;
 }
-
+.latinname {
+  font-family: looking-flowers-script, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.75rem;
+  color: var(--green30);
+}
 .productimg {
   grid-column-start: 2;
+  height: 30rem;
+  padding: 3rem;
 }
 
 h1 {
   font-size: 4rem;
-  color: var(--main-text-color);
+  color: var(--green30);
 }
 
 p {
@@ -125,18 +183,22 @@ p {
 /*Footer*/
 
 .footer_container {
-  margin-top: 20vh;
+  margin-top: 10vh;
   background-color: #01401c;
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  height: 20vh;
-  padding: 3vw;
+  height: 8vh;
+  padding-bottom: 8vh;
   padding-left: 10vw;
+  color: var(--bg-color);
+  grid-gap: 5vw;
 }
-
+footer p {
+  color: var(--bg-color);
+}
 h3 {
   font-size: 1rem;
-  color: white;
+  text-align: left;
 }
 
 .social {
@@ -144,34 +206,43 @@ h3 {
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  width: 40vw;
 }
 
-.ig img {
+.ig {
   position: absolute;
   background: no-repeat;
   width: 3vw;
   padding-top: 7vh;
-  margin-left: -5vw;
+  margin-left: 5vw;
   margin-right: 2rem;
 }
 
-.fb img {
+.fb {
   position: absolute;
   background-size: 100%;
   width: 3vw;
   padding-top: 7vh;
-  margin-left: -5vw;
+  margin-left: -0vw;
   margin-right: 2rem;
 }
 
-.snapchat img {
+.snapchat {
   position: absolute;
   background-size: 100%;
   width: 3vw;
   padding-top: 7vh;
-  margin-left: -6vw;
+  margin-left: 10vw;
   margin-right: 2rem;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  line-height: 3vh;
+  list-style: none;
+  padding-left: 0;
 }
 
 .listimg {
@@ -179,8 +250,15 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;
+  width: 30rem;
+  height: 30rem;
 }
 .listh1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+.speciesh1 {
   text-align: center;
   font-weight: 200;
   font-size: 1.3rem;
