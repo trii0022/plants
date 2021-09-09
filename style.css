@@ -156,7 +156,13 @@ button {
 .directsunlight {
   grid-column: 1;
 }
-
+.latinname {
+  font-family: looking-flowers-script, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.75rem;
+  color: var(--green30);
+}
 .productimg {
   grid-column-start: 2;
 }
