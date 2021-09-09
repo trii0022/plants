@@ -24,11 +24,9 @@ body {
 
 nav {
   display: flex;
-
   gap: 7rem;
   justify-content: space-around;
   align-items: baseline;
-
   padding: 1rem;
   margin-right: 15rem;
   margin-left: 5rem;
@@ -54,7 +52,8 @@ nav a:first-child {
 main {
   margin-top: 1em;
   display: grid;
-  grid-template-columns: 40% 40% 20%;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0;
 }
 .plantmain {
   display: grid;
@@ -164,18 +163,22 @@ p {
 /*Footer*/
 
 .footer_container {
-  margin-top: 20vh;
+  margin-top: 10vh;
   background-color: #01401c;
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  height: 20vh;
-  padding: 3vw;
+  height: 8vh;
+  padding-bottom: 8vh;
   padding-left: 10vw;
+  color: var(--bg-color);
+  grid-gap: 5vw;
 }
-
+footer p {
+  color: var(--bg-color);
+}
 h3 {
   font-size: 1rem;
-  color: white;
+  text-align: left;
 }
 
 .social {
@@ -183,34 +186,43 @@ h3 {
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  width: 40vw;
 }
 
-.ig img {
+.ig {
   position: absolute;
   background: no-repeat;
   width: 3vw;
   padding-top: 7vh;
-  margin-left: -5vw;
+  margin-left: 5vw;
   margin-right: 2rem;
 }
 
-.fb img {
+.fb {
   position: absolute;
   background-size: 100%;
   width: 3vw;
   padding-top: 7vh;
-  margin-left: -5vw;
+  margin-left: -0vw;
   margin-right: 2rem;
 }
 
-.snapchat img {
+.snapchat {
   position: absolute;
   background-size: 100%;
   width: 3vw;
   padding-top: 7vh;
-  margin-left: -6vw;
+  margin-left: 10vw;
   margin-right: 2rem;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  line-height: 3vh;
+  list-style: none;
+  padding-left: 0;
 }
 
 .listimg {
