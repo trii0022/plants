@@ -1,13 +1,13 @@
 :root {
-  /*   --bg-color: #6c7d6a;
-  --link-color: #185d0b;
-  --link-hover-color: #185d0b;
-  --color-4: #185d0b;
-  --color-5: #185d0b;
- */
+  --bg-color: #e9eaec;
+  --link-color: green;
+  --color-5: rebeccapurple;
+  --green10: #038c4c;
+  --green20: #02733e;
+  --green30: #045e2b;
+  --main-text-color: #000;
   --primary-font: "Urbanist", sans-serif;
   --secondary-font: "Montserrat", serif;
-  --main-text-color: #185d0b;
 
   --white-space: 1rem;
 }
@@ -35,7 +35,7 @@ nav {
 }
 
 a {
-  color: var(--main-text-color);
+  color: var(--green20);
   text-decoration: none;
   font-weight: 200;
   font-size: 1.3rem;
@@ -82,7 +82,9 @@ main {
 }
 */
 
-/*.mainpage {*/
+/* INDEX */
+
+
 .frontpage_section {
   grid-column: 2;
   margin-top: 4vw;
@@ -90,6 +92,43 @@ main {
   margin-right: 15vw;
   width: 25vw;
 }
+.logo {
+  color: var(--green30);
+}
+
+.secondary-button {
+  margin-top: 2vw;
+  background: var(--green30);
+  box-shadow: none;
+  color: var(--bg-color);
+  padding: 1.2vw;
+  border-radius: 20px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+
+.secondary-button:hover {
+  background: var(--bg-color);
+  color: var(--green30);
+  padding: 0.9vw;
+}
+button {
+  font-family: "urbanist", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  background: var(--bg-color);
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin: 0 1rem 1rem 0;
+}
+
 /* PRODUCT PAGE */
 .product {
   display: block;
@@ -114,7 +153,7 @@ main {
 
 h1 {
   font-size: 4rem;
-  color: var(--main-text-color);
+  color: var(--green30);
 }
 
 p {
