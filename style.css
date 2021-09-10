@@ -278,7 +278,7 @@ li {
 
 /* Media queries - need to EDIT */
 
-@media (min-width: 300px) {
+@media (min-width: 300px) and (max-width:700px) {
   main {
     display: grid;
     grid-template-columns: 1fr;
@@ -314,7 +314,12 @@ margin-right:1rem;
     
 .listimg{ width:20rem;
 height:20rem;}
-
+.listimg:hover {
+    width: 19rem;
+    height: 19rem;
+    transition: all 0.5s;
+    opacity: 0.5;
+  }
 .nav{gap:1rem;
 font-size: 0.5rem;}
 
