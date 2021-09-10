@@ -39,4 +39,11 @@ if (obj.directsunlight) {
         document.querySelector(".directsunlight span").textContent = "Yes";
     }
     else {        document.querySelector(".directsunlight span").textContent = "No";
+    
+if (obj.weekly) {
+        document.querySelector(".weekly").textContent = "Week";
+    }
+    else {        document.querySelector(".weekly").textContent = "Month";
+    
+}
 }}
