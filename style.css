@@ -121,6 +121,7 @@ main {
   background: var(--bg-color);
   color: var(--green30);
   padding: 1vw;
+  transition: all 0.5s;
 }
 button {
   font-family: "urbanist", sans-serif;
