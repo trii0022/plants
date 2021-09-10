@@ -120,7 +120,7 @@ main {
 .secondary-button:hover {
   background: var(--bg-color);
   color: var(--green30);
-  padding: 0.9vw;
+  padding: 1vw;
 }
 button {
   font-family: "urbanist", sans-serif;
