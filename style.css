@@ -278,12 +278,46 @@ li {
 
 /* Media queries - need to EDIT */
 
-@media (min-width: 800px) {
+@media (min-width: 300px) {
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 4rem;
   }
+.mainpage{grid-column:1;
+margin-left:2vw;}
+
+
+.listmain{
+    display: block;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+    margin:0;
+  }
+  .plantmain{
+    display: block;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+    margin:0;
+    margin-left:1rem;
+    margin-right:1rem;
+
+  }
+
+  .productimg{ width:20rem;
+    height:20rem;
+padding:0;
+margin:0;
+margin-left:1rem;
+margin-right:1rem;
+}
+    
+.listimg{ width:20rem;
+height:20rem;}
+
+.nav{gap:1rem;
+font-size: 0.5rem;}
+
 
   .swatches li {
     margin-right: 3%;
@@ -294,13 +328,16 @@ li {
   .textures li {
     height: 15vw;
   }
-}
 
-@media (min-width: 900px) {
-  .adjectives ul {
-    flex-direction: row;
+  .footer_container {
+    height: 20vh;
   }
+
+.GreenCare{line-height: 0;
+font-size:0.8rem;}
 }
+/* 
+
 /* IMAGEPAGE */
 body .image {
   display: grid;
@@ -309,4 +346,4 @@ body .image {
 }
 .imagesss img {
   width: 100%;
-}
+} */
