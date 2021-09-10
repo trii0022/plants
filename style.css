@@ -66,7 +66,7 @@ main {
   grid-gap: 3vw;
   grid-template-columns: 1.5fr 2fr;
   grid-template-rows: 1fr;
-  margin-left: 4.5vw;
+  margin-left: 10vw;
 }
 .listmain {
   margin-left: 20vw;
@@ -159,7 +159,6 @@ button {
 }
 .latinname {
   font-family: looking-flowers-script, sans-serif;
-  font-weight: 400;
   font-style: normal;
   font-size: 1.75rem;
   color: var(--green30);
@@ -168,6 +167,7 @@ button {
   grid-column-start: 2;
   height: 30rem;
   padding: 3rem;
+  padding-top: 8rem;
 }
 
 h1 {
@@ -178,6 +178,7 @@ h1 {
 p {
   color: var(--main-text-color);
   letter-spacing: 0.05rem;
+  line-height: 2em;
 }
 
 /*Footer*/
@@ -249,14 +250,21 @@ li {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
+  border: 1px solid var(--bg-color);
   width: 30rem;
   height: 30rem;
+}
+
+.listimg:hover {
+  width: 29rem;
+  height: 29rem;
+  transition: all 0.5s;
+  opacity: 0.5;
 }
 .listh1 {
   text-align: center;
   font-weight: 200;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .speciesh1 {
   text-align: center;
